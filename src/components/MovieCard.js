@@ -36,7 +36,7 @@ const MovieCard = ({ movieProps }) => {
     <div className='max-w-md rounded overflow-hidden shadow-lg h-full'>
       <img
         className='w-full'
-        src={`http://localhost:3001/${movieProps.image}`}
+        src={`http://localhost:8080/${movieProps.image}`}
         alt='Sunset in the mountains'
         style={{ height: '400px' }}
       />
@@ -63,6 +63,7 @@ const MovieCard = ({ movieProps }) => {
       <NavigateButton label='See Details' onNavigate={handleClick} />
       <button   onClick={handleAddToFavorites} class='bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-full'>
       Add to Favorites
+      {isAlreadyFavorite}
     </button>
       <DeleteButton label='Delete' />
       <div className='px-6 pt-4 pb-2'>

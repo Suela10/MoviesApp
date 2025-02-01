@@ -14,7 +14,7 @@ const MoviesList = () => {
     // Fetch movies from API
     const fetchMovies = async () => {
       try {
-        const response = await axios.get('http://localhost:3001/movies');
+        const response = await axios.get('http://localhost:8080/movies');
         setMovies(response.data);
       } catch (err) {
         console.log('Error:', err.message);

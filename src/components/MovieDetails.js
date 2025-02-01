@@ -12,7 +12,7 @@ console.log("location state: ",location.state)
 <div className="flex flex-row items-start justify-between p-4">
   <img
     className="rounded-lg mr-8"
-    src={`http://localhost:3001/${location.state.image}`}
+    src={`http://localhost:8080/${location.state.image}`}
     alt="Movie Thumbnail"
     style={{ height: '400px', width: '400px', padding: '30px' }}
   />
